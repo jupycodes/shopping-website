@@ -4,8 +4,36 @@
     border-top: 0px;
   }
 
-  /* .card-img-top {
-    width: 25vw;
-    height: auto;
-    object-fit: cover;
-} */
+  .navbar{
+    background-color: rgb(15, 51, 5);
+    }
+    /* Change navbar colour based on view-port size */
+    @media screen and (min-width: 600px) {
+      .navbar{
+        background-color: rgb(7, 35, 126);
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+      .navbar{
+        background-color: rgb(33, 37, 41);
+        }
+    }
+
+    /* set a breakpoint at 400px */
+  
+  @media screen and (max-width: 400px) {
+       .row-custom {
+          display: grid;
+       }
+      .card {
+        width:90vw;
+      }
+  }
+  @media screen and (min-width: 400px) {
+    .row-custom {
+       display: flex;
+       flex-wrap: wrap;
+    } 
+   
+}
